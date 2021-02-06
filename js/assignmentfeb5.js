@@ -1,1 +1,4 @@
-var currentMinute = newDate().getMinutes();
+function showmin(){
+    var currentMinute = new Date().getMinutes();
+    document.getElementById('currentmin').innerText = currentMinute;
+}

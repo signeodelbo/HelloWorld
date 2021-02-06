@@ -9,7 +9,7 @@
     <!-- Other styles-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Script -->
-    <script src="assignmentfeb5.js"></script>
+    <script src="js/assignmentfeb5.js"></script>
     <title>Home</title>
   </head>
   <body style="background-color: lightyellow; font-family:'Courier New', Courier, monospace;">
@@ -33,12 +33,13 @@
 
     <div style="position: relative; text-align: center;">
       <img src="images/IMG_2038.jpeg" alt="Hospital" style="width: 100%;">
-      <div style="position: absolute; bottom: 57%; left: 43%;">
-        <button type="button" class="btn btn-primary" onclick="evalNumber()">Evaluate number</button>
-      </div>
-      <div style="position: absolute; bottom: 50%; left: 43%;">
-        <button type="button" class="btn btn-primary" onclick="evalNumber()">Evaluate number</button>
-      </div>
+        <div class="container" id="currentmin" style="position: absolute; bottom: 70%; left: 3%; background-color: white"></div>
+        <div style="position: absolute; bottom: 57%; left: 40%;"> 
+        <button type="button" class="btn btn-primary" onclick="showmin()">Show current minute.</button>
+      </div> 
+      <div style="position: absolute; bottom: 50%; left: 41%;">
+        <button type="button" class="btn btn-primary" onclick="evalNumber()">Disappear element.</button>
+      </div> -->  
     </div>
 
 
