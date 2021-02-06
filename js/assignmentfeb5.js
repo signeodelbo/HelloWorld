@@ -3,5 +3,5 @@ function showmin(){
     document.getElementById('currentmin').innerText = currentMinute;
 }
 function disappear(){
-    
+    document.getElementById("header").style.display = "none";
 }
