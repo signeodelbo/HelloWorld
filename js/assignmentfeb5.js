@@ -1,0 +1,1 @@
+var currentMinute = newDate().getMinutes();
