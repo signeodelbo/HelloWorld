@@ -4,14 +4,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>About</title>
+    <!-- Map API-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <!-- Other styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Script -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="js/map.js"></script>
+    <title>Map API</title>
   </head>
-  <body style="background-color: lightyellow; font-family:'Courier New', Courier, monospace;">
-    <h1>About</h1>
+  <body onload="mapLoad()" style= "background-color: lightyellow; font-family:'Courier New', Courier, monospace;">
+    <h1>Map API</h1>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,17 +36,19 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" style ="color:white" href="jukebox.html">Jukebox<span class="sr-only">(current)</span></a>
-          </li>   
+          </li> 
           <li class="nav-item">
             <a class="nav-link" style ="color:white" href="map.html">Map<span class="sr-only">(current)</span></a>
-          </li>  
+          </li>   
       </div>
     </nav>
+      <div class="container mt-3">
+        <h1>Map API Example</h1>
+        <div id="map" style="height: 400px; width: 100%"></div>
+      </div>
+      
+    </nav>
 
-    <div class="container">This is my cat, Basil. If he were a person, I'd probably call the police on him because he's abusive.</div>
-    <div class="container">  
-      <img src="images/IMG_3512.jpg" alt="Basil" style="width: 500px;">
-    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
