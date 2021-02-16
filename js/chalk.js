@@ -10,11 +10,11 @@ function last_alphabetically(){
 }
 
 function list_alphabetical(){
-    var first = document.querySelector('#firstWord').value;
-    var second = document.querySelector('#secondWord').value;
-    var third = document.querySelector('#thirdWord').value;
-    var fourth = document.querySelector('#fourthWord').value;
+    var first = document.getElementById('firstWord').value;
+    var second = document.getElementById('secondWord').value;
+    var third = document.getElementById('thirdWord').value;
+    var fourth = document.getElementById('fourthWord').value;
     var newArray = [first,second,third,fourth];
     var sort = newArray.sort();
-    document.getElementById('list').innerHTML = sort;
+    document.getElementById('list').innerText = sort;
 }
