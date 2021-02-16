@@ -8,3 +8,13 @@ function last_alphabetically(){
     var reverse = sort.reverse();
     console.log(reverse[0]);
 }
+
+function list_alphabetical(){
+    var first = document.querySelector('#firstWord').value;
+    var second = document.querySelector('#secondWord').value;
+    var third = document.querySelector('#thirdWord').value;
+    var fourth = document.querySelector('#fourthWord').value;
+    var newArray = [first,second,third,fourth];
+    var sort = newArray.sort();
+    document.getElementById('list').innerHTML = sort;
+}

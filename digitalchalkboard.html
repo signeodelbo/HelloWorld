@@ -17,7 +17,7 @@
     <title>DigChalk</title>
 
     <style>
-       .row{background-color: beige; margin: 2%;}
+       #text{background-color: beige; margin-left: 6%; margin-top: 3%}
        .my-column{margin-top:2%;} 
        @media (max-width: 992px){
            .my-column{text-justify: inter-word;}
@@ -32,10 +32,11 @@
        } 
        .flex-row{
            margin-top: 2%;
-           margin-left: 39%;
+           margin-bottom: 2%;
+           margin-left: 45%;
        }
         @media (min-width: 600px){
-            #carousel{margin:5%;}
+            #carousel{margin:6%;}
        }
        footer{
            background-color: black;
@@ -76,9 +77,36 @@
     </nav>
     <div class="flex-row" id="popup_alert">
         <button type="button" class="btn btn-primary" onclick="popup_alert()">Don't push.</button>
-        <button type="button" class="btn btn-primary" onclick="last_alphabetically()">Last alphabetically.</button>
-    </div> 
-    <div class="container">
+    </div>
+    <div class="container" style="background-color: gainsboro; padding: 3%;">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="firstWord">Input first word:</label>
+              <input type="text" name="firstWord" id="firstWord" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="secondWord">Input second word:</label>
+              <input type="text" name="secondWord" id="secondWord" class="form-control">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="thirdWord">Input third word:</label>
+              <input type="text" name="thirdtWord" id="thirdWord" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="fourthWord">Input fourth word:</label>
+              <input type="text" name="fourthWord" id="fourthWord" class="form-control">
+            </div>
+          </div>
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary" onclick="list_alphabetical()">Produce list in order.</button>
+      <p id="list"></p>
+    </div>
+    <div class="container" id="text">
         <div class="row align-items-center">
             <div class="col-md-3 my-column">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
