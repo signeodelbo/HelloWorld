@@ -10,19 +10,19 @@ function wikiAPI() {
         var pages = wikiObject.query.pages;
         var pageID = wikiObject.query.pages.pageid;
         var pageURL = "https://en.wikipedia.org/?curid=" + pageID;
-        for (var i in pages) {
-            //var newDiv = document.createElement('div');
-            //newDiv.setAttribute('class','row h4');
-            //document.getElementById('wiki').appendChild(newDiv);
-            //newDiv.innerText = pages[i].title;
-            var newLink = document.createElement('a');
-            document.getElementById('pageURL').appendChild(newLink);
-            newLink.innerText = pages[i].title;
+        for (i in pages) {
+            var newDiv = document.createElement('div');
+            newDiv.setAttribute('class','row h4');
+            document.getElementById('wiki').appendChild(newDiv);
+            newDiv.innerText = pages[i].title;
+            //var newLink = document.createElement('a');
+           // document.getElementById('pageURL').appendChild(newLink);
+            //newLink.innerText = pages[i].title;
+            //newLink.href.innerText = pages[i].pageURL;
             document.getElementById('pageURL').onclick = function() {
-                document.querySelector('a').setAttribute("href", pageURL);
-
+                    document.querySelector('a').setAttribute("href", pageURL);
+                }
             }
-        }
     }
     xhr.send();
 }
